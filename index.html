@@ -1,525 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saulo Sarmiento</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --ink:#0e0d0b;
-  --paper:#f7ede3;
-  --cream:#f0ddd0;
-  --accent:#c8602a;
-  --muted:#8a7470;
-  --serif:'Cormorant Garamond',Georgia,serif;
-  --mono:'DM Mono',monospace;
-}
-html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:var(--serif);overflow-x:hidden}
+￼
+		ABOUT
+		EXPERIENCE
+		WORK
+		MEDIA
+		CONTACT
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 3rem;background:rgba(247,237,227,0.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(200,96,42,0.12)}
-.nav-links{display:flex;gap:2.5rem;list-style:none}
-.nav-links a{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--muted);transition:color 0.2s}
-.nav-links a:hover{color:var(--accent)}
+CIRCUS PERFORMER · AGENT · COACH · CREATIVE ADVISOR
+Saulo Sarmiento
+Aerial pole creator. Artist agent. Coach and creative advisor — connecting circus talent to the world's stages.
+DISCOVER MORE →
+SCROLL
 
-
-.hero-video-section{position:relative;width:100%;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.hero-video-section iframe{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100vh;min-width:177.77vh;transform:translate(-50%,-50%);pointer-events:none;border:none}
-.hero-video-overlay{position:absolute;inset:0;background:rgba(30,18,8,0.68);z-index:1}
-.hero-video-content{position:relative;z-index:2;text-align:center;color:#f7ede3;padding:2rem}
-.hero-video-tag{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(236,194,148,0.8);margin-bottom:1.5rem}
-.hero-video-name{font-size:clamp(4rem,9vw,8rem);font-weight:300;line-height:0.95;letter-spacing:-0.02em;margin-bottom:1.5rem;color:#e8c090}
-.hero-video-name em{font-style:italic;color:var(--accent)}
-.hero-video-desc{font-size:1.1rem;font-weight:300;line-height:1.7;color:rgba(236,194,148,0.75);max-width:500px;margin:0 auto 2.5rem}
-.hero-video-cta{display:inline-flex;align-items:center;gap:0.8rem;font-family:var(--mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:#e8c090;border-bottom:1px solid var(--accent);padding-bottom:0.3rem;transition:gap 0.2s}
-.hero-video-cta:hover{gap:1.2rem}
-.scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:0.5rem;animation:bounce 2s infinite}
-.scroll-indicator span{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(236,194,148,0.5)}
-.scroll-indicator svg{width:20px;height:20px;stroke:rgba(236,194,148,0.4)}
-@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-@media(max-width:768px){
-  .hero-video-section{height:100svh}
-  .hero-video-section iframe{width:177.77vh;height:100vh}
-}
-
-.hero{min-height:100vh;display:flex;align-items:center;padding:8rem 3rem 4rem;position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0.18;filter:grayscale(30%)}
-.hero-bg-fade{position:absolute;inset:0;background:linear-gradient(to right,var(--paper) 45%,transparent 100%)}
-.hero-circle{width:55vw;height:55vw;border-radius:50%;border:1px solid rgba(200,96,42,0.15);position:absolute;right:-15vw;top:50%;transform:translateY(-50%)}
-.hero-circle-2{width:38vw;height:38vw;border-radius:50%;border:1px solid rgba(200,96,42,0.08);position:absolute;right:-5vw;top:50%;transform:translateY(-50%)}
-.hero-content{position:relative;z-index:2;max-width:700px}
-.hero-tag{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem}
-.hero-name{font-size:clamp(3.5rem,7vw,6.5rem);font-weight:300;line-height:1;letter-spacing:-0.02em;margin-bottom:1.5rem}
-.hero-name em{font-style:italic;color:var(--accent)}
-.hero-desc{font-size:1.2rem;font-weight:300;line-height:1.7;color:var(--muted);max-width:480px;margin-bottom:2.5rem}
-.hero-roles{display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:3rem}
-.role-tag{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.4rem 1rem;border:1px solid rgba(200,96,42,0.3);color:var(--muted)}
-.hero-cta{display:inline-flex;align-items:center;gap:0.8rem;font-family:var(--mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--accent);padding-bottom:0.3rem;transition:gap 0.2s}
-.hero-cta:hover{gap:1.2rem}
-
-.marquee-wrap{background:var(--accent);padding:0.85rem 0;overflow:hidden;white-space:nowrap}
-.marquee-track{display:inline-flex;animation:marquee 22s linear infinite}
-.marquee-item{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:#fff;padding:0 2.5rem;opacity:0.9}
-.marquee-dot{opacity:0.5}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-.about{padding:7rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.about-label{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:2rem}
-.about-headline{font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.2;letter-spacing:-0.01em;margin-bottom:1.5rem}
-.about-headline em{font-style:italic;color:var(--accent)}
-.about-portrait{width:100%;max-width:280px;display:block;margin-bottom:2rem}
-.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(200,96,42,0.15);border:1px solid rgba(200,96,42,0.2)}
-.stat{background:var(--paper);padding:1.5rem;text-align:center}
-.stat-num{font-size:2.5rem;font-weight:300;color:var(--accent);display:block;line-height:1}
-.stat-label{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);display:block;margin-top:0.4rem}
-.about-text p{font-size:1.05rem;font-weight:300;line-height:1.8;color:#4a4740;margin-bottom:1.5rem}
-.lang-block{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(200,96,42,0.15)}
-.lang-label{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:0.5rem}
-.lang-text{font-size:0.95rem;font-weight:300;color:var(--muted);line-height:1.9}
-
-.work{padding:7rem 3rem;background:var(--cream)}
-.section-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4rem;border-bottom:1px solid rgba(200,96,42,0.2);padding-bottom:1.5rem}
-.section-label{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent)}
-.section-title{font-size:clamp(1.8rem,3vw,2.5rem);font-weight:300}
-.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(200,96,42,0.12)}
-.work-card{background:var(--cream);padding:2.5rem 2rem;position:relative;cursor:pointer;transition:background 0.3s}
-.work-card:hover{background:var(--paper)}
-.work-card-num{font-family:var(--mono);font-size:0.62rem;color:var(--muted);margin-bottom:1.5rem}
-.work-card-icon{font-size:2rem;margin-bottom:1.2rem;line-height:1}
-.work-card-title{font-size:1.3rem;font-weight:400;line-height:1.2;margin-bottom:0.8rem}
-.work-card-title em{font-style:italic;color:var(--accent)}
-.work-card-desc{font-size:0.9rem;font-weight:300;line-height:1.7;color:var(--muted)}
-.work-card-arrow{position:absolute;bottom:2rem;right:2rem;font-family:var(--mono);font-size:0.65rem;color:var(--accent);opacity:0;transition:opacity 0.2s}
-.work-card:hover .work-card-arrow{opacity:1}
-
-.experience{padding:7rem 3rem;background:var(--paper)}
-.exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(200,96,42,0.08)}
-.exp-card{background:var(--paper);padding:2.5rem 2rem;border-bottom:1px solid rgba(200,96,42,0.08)}
-.exp-card-featured{background:rgba(200,96,42,0.03);border:1px solid rgba(200,96,42,0.15);grid-column:span 2}
-.exp-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3rem;gap:1rem}
-.exp-name{font-size:1.15rem;font-weight:400}
-.exp-name em{font-style:italic;color:var(--accent)}
-.exp-year{font-family:var(--mono);font-size:0.6rem;color:var(--muted);white-space:nowrap}
-.exp-role{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.08em;color:var(--accent);text-transform:uppercase;margin-bottom:1rem}
-.exp-li{font-size:0.9rem;font-weight:300;line-height:1.6;color:var(--ink);padding-left:1rem;border-left:2px solid rgba(200,96,42,0.4);margin-bottom:0.5rem}
-
-.skills{padding:3rem 3rem 5rem;background:var(--paper)}
-.skill-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem}
-.skill-tag{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.35rem 0.9rem;border:1px solid rgba(200,96,42,0.2);color:var(--muted)}
-
-.media{padding:7rem 3rem;background:var(--cream)}
-.media-tabs{display:flex;gap:0;margin-bottom:3rem;border-bottom:1px solid rgba(200,96,42,0.2)}
-.media-tab{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;padding:0.8rem 1.6rem;cursor:pointer;border:none;background:none;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color 0.2s,border-color 0.2s}
-.media-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
-.media-pane{display:none}
-.media-pane.active{display:block}
-
-.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:240px;gap:6px}
-.photo-item{position:relative;overflow:hidden;cursor:pointer;background:var(--cream)}
-.photo-item:first-child{grid-column:span 2;grid-row:span 2}
-.photo-item:nth-child(6){grid-column:span 2}
-.photo-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;display:block}
-.photo-item:hover img{transform:scale(1.05)}
-.photo-overlay{position:absolute;inset:0;background:rgba(14,13,11,0);display:flex;align-items:flex-end;padding:1rem;transition:background 0.3s}
-.photo-item:hover .photo-overlay{background:rgba(14,13,11,0.35)}
-.photo-caption{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:#fff;opacity:0;transition:opacity 0.3s}
-.photo-item:hover .photo-caption{opacity:1}
-
-.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-.video-item{cursor:pointer}
-.video-thumb{position:relative;width:100%;padding-bottom:56.25%;background:var(--cream);overflow:hidden;border:1px solid rgba(200,96,42,0.15)}
-.video-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(14,13,11,0.2)}
-.play-btn{width:56px;height:56px;border-radius:50%;border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.2s;background:rgba(247,237,227,0.15)}
-.play-btn svg{width:18px;height:18px;fill:var(--accent);margin-left:3px}
-.video-item:hover .play-btn{background:var(--accent);transform:scale(1.05)}
-.video-item:hover .play-btn svg{fill:#fff}
-.video-meta{padding:1rem 0 0}
-.video-title{font-size:1.05rem;font-weight:400;margin-bottom:0.3rem}
-.video-title em{font-style:italic;color:var(--accent)}
-.video-desc{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.08em;color:var(--muted);text-transform:uppercase}
-.video-embed-wrap{position:relative;width:100%;padding-bottom:56.25%}
-.video-embed-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
-.feat-label{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-.divider-label{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);border-top:1px solid rgba(200,96,42,0.1);padding-top:2rem;margin:2rem 0 1.5rem}
-
-.links-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(200,96,42,0.12);border:1px solid rgba(200,96,42,0.15)}
-.link-card{background:var(--cream);padding:2rem;display:flex;align-items:center;gap:1.5rem;text-decoration:none;color:var(--ink);transition:background 0.2s}
-.link-card:hover{background:var(--paper)}
-.link-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;background:var(--paper);border:1px solid rgba(200,96,42,0.2)}
-.link-platform{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem}
-.link-name{font-size:1rem;font-weight:400}
-.link-arrow{margin-left:auto;font-family:var(--mono);font-size:0.8rem;color:var(--accent);opacity:0;transition:opacity 0.2s}
-.link-card:hover .link-arrow{opacity:1}
-
-.contact{padding:7rem 3rem;background:var(--cream);color:var(--ink);position:relative;overflow:hidden}
-.contact-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.08;filter:grayscale(50%)}
-.contact-inner{position:relative;z-index:1;max-width:700px}
-.contact-label{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem}
-.contact-headline{font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1;letter-spacing:-0.02em;margin-bottom:2rem;color:var(--ink)}
-.contact-headline em{font-style:italic;color:var(--accent)}
-.contact-sub{font-size:1.05rem;font-weight:300;line-height:1.7;color:var(--muted);margin-bottom:3.5rem}
-.contact-link{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0;border-bottom:1px solid rgba(200,96,42,0.15);text-decoration:none;color:var(--ink);transition:padding-left 0.2s}
-.contact-link:hover{padding-left:0.5rem}
-.contact-link-label{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
-.contact-link-value{font-size:1rem;font-weight:300}
-.contact-link-arrow{color:var(--accent);font-family:var(--mono);font-size:0.8rem}
-
-footer{background:var(--ink);border-top:1px solid rgba(200,96,42,0.2);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center}
-footer p{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.1em;color:rgba(247,237,227,0.4);text-transform:uppercase}
-
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-
-@media(max-width:768px){
-  nav{padding:1.2rem 1.5rem}
-  .nav-links{gap:1.2rem}
-  .nav-links a{font-size:0.6rem}
-  
-.hero-video-section{position:relative;width:100%;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.hero-video-section iframe{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100vh;min-width:177.77vh;transform:translate(-50%,-50%);pointer-events:none;border:none}
-.hero-video-overlay{position:absolute;inset:0;background:rgba(30,18,8,0.68);z-index:1}
-.hero-video-content{position:relative;z-index:2;text-align:center;color:#f7ede3;padding:2rem}
-.hero-video-tag{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(236,194,148,0.8);margin-bottom:1.5rem}
-.hero-video-name{font-size:clamp(4rem,9vw,8rem);font-weight:300;line-height:0.95;letter-spacing:-0.02em;margin-bottom:1.5rem;color:#e8c090}
-.hero-video-name em{font-style:italic;color:var(--accent)}
-.hero-video-desc{font-size:1.1rem;font-weight:300;line-height:1.7;color:rgba(236,194,148,0.75);max-width:500px;margin:0 auto 2.5rem}
-.hero-video-cta{display:inline-flex;align-items:center;gap:0.8rem;font-family:var(--mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:#e8c090;border-bottom:1px solid var(--accent);padding-bottom:0.3rem;transition:gap 0.2s}
-.hero-video-cta:hover{gap:1.2rem}
-.scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:0.5rem;animation:bounce 2s infinite}
-.scroll-indicator span{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(236,194,148,0.5)}
-.scroll-indicator svg{width:20px;height:20px;stroke:rgba(236,194,148,0.4)}
-@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-@media(max-width:768px){
-  .hero-video-section{height:100svh}
-  .hero-video-section iframe{width:177.77vh;height:100vh}
-}
-
-.hero{padding:7rem 1.5rem 4rem}
-  .about{grid-template-columns:1fr;gap:3rem;padding:5rem 1.5rem}
-  .work{padding:5rem 1.5rem}
-  .work-grid{grid-template-columns:1fr}
-  .experience{padding:5rem 1.5rem}
-  .exp-grid{grid-template-columns:1fr}
-  .exp-card-featured{grid-column:span 1}
-  .skills{padding:2rem 1.5rem 4rem}
-  .media{padding:5rem 1.5rem}
-  .photo-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
-  .photo-item:first-child{grid-column:span 2;grid-row:span 1}
-  .photo-item:nth-child(6){grid-column:span 2}
-  .video-grid{grid-template-columns:1fr}
-  .links-grid{grid-template-columns:1fr}
-  .contact{padding:5rem 1.5rem}
-  footer{flex-direction:column;gap:0.5rem;padding:1.5rem;text-align:center}
-}
-</style>
-</head>
-<body>
-
-<nav>
-  <a href="#" style="display:flex;align-items:center">
-    <img src="LogoSaulo_negro_fondoTransparente.png" alt="Saulo Sarmiento" style="height:38px;width:auto">
-  </a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#media">Media</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<section class="hero" style="display:none">
-  <div class="hero-bg">
-    <img src="RS05044-1.jpg" alt="">
-    <div class="hero-bg-fade"></div>
-  </div>
-  <div class="hero-circle"></div>
-  <div class="hero-circle-2"></div>
-  <div class="hero-content reveal">
-    <p class="hero-tag">Circus Performer · Agent · Coach · Creative Advisor</p>
-    <h1 class="hero-name">Saulo<br><em>Sarmiento</em></h1>
-    <p class="hero-desc">Aerial pole creator. Artist agent. Coach and creative advisor — connecting circus talent to the world's stages.</p>
-    <div class="hero-roles">
-      <span class="role-tag">Aerial Pole Creator</span>
-      <span class="role-tag">Artist Agent</span>
-      <span class="role-tag">Coach</span>
-      <span class="role-tag">Creative Advisor</span>
-    </div>
-    <a href="#work" class="hero-cta">See my work →</a>
-  </div>
-</section>
-
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <span class="marquee-item">Aerial Pole <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Circus Performance <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Artist Agency <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Coaching &amp; Workshops <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">250+ Performers Worldwide <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Creative Advisory <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Aerial Pole <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Circus Performance <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Artist Agency <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Coaching &amp; Workshops <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">250+ Performers Worldwide <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Creative Advisory <span class="marquee-dot">✦</span></span>
-  </div>
-</div>
-
-<section class="about" id="about">
-  <div class="reveal">
-    <p class="about-label">About</p>
-    <h2 class="about-headline">Creator.<br><em>Agent.</em><br>Coach.</h2>
-    <img class="about-portrait" src="saulo__468_.jpg" alt="Saulo Sarmiento">
-    <div class="about-stats">
-      <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Artists Managed</span></div>
-      <div class="stat"><span class="stat-num">250+</span><span class="stat-label">Performers Network</span></div>
-      <div class="stat"><span class="stat-num">5</span><span class="stat-label">Continents</span></div>
-      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Stories Told</span></div>
-    </div>
-  </div>
-  <div class="about-text reveal">
-    <p>Multilingual creative leader combining deep artistic expertise with production management, coaching, and talent development. Experienced in show direction, act creation, artistic advisory, and creative consulting for world-class companies including Cirque du Soleil and Franco Dragone.</p>
-    <p>Creator of acts presented at Cirque de Demain Paris, Monte-Carlo Festival, and other leading international platforms. Active across 30+ countries as director, advisor, coach, and agent.</p>
-    <div class="lang-block">
-      <p class="lang-label">Languages</p>
-      <p class="lang-text">Spanish — Native &nbsp;·&nbsp; English — Fluent &nbsp;·&nbsp; French — Fluent &nbsp;·&nbsp; Italian — Fluent</p>
-    </div>
-  </div>
-</section>
-
-<section class="work" id="work">
-  <div class="section-header reveal">
-    <div>
-      <p class="section-label">Portfolio</p>
-      <h2 class="section-title">What I do</h2>
-    </div>
-  </div>
-  <div class="work-grid reveal">
-    <div class="work-card">
-      <div class="work-card-num">01</div>
-      <div class="work-card-icon">🎪</div>
-      <h3 class="work-card-title">Circus <em>Performance</em></h3>
-      <p class="work-card-desc">A performer with an international career spanning five continents. Available for productions, galas, festivals, corporate events and bespoke commissions worldwide.</p>
-      <span class="work-card-arrow">→</span>
-    </div>
-    <div class="work-card">
-      <div class="work-card-num">02</div>
-      <div class="work-card-icon">🏛️</div>
-      <h3 class="work-card-title">Aerial <em>Pole</em></h3>
-      <p class="work-card-desc">Creator of aerial pole — an original discipline pushing the boundaries of what pole can express in a circus context. A signature act unlike anything else on stage.</p>
-      <span class="work-card-arrow">→</span>
-    </div>
-    <div class="work-card">
-      <div class="work-card-num">03</div>
-      <div class="work-card-icon">🤝</div>
-      <h3 class="work-card-title">Artist <em>Agency</em></h3>
-      <p class="work-card-desc">Freelance artist agency backed by a global database of 250+ performers worldwide. Connecting exceptional talent with producers, festivals and events at every scale.</p>
-      <span class="work-card-arrow">→</span>
-    </div>
-    <div class="work-card">
-      <div class="work-card-num">04</div>
-      <div class="work-card-icon">⭐</div>
-      <h3 class="work-card-title">Artist <em>Management</em></h3>
-      <p class="work-card-desc">Personally managing a roster of 30+ artists — handling bookings, contracts, career strategy and creative development for circus performers at all career stages.</p>
-      <span class="work-card-arrow">→</span>
-    </div>
-    <div class="work-card">
-      <div class="work-card-num">05</div>
-      <div class="work-card-icon">🎓</div>
-      <h3 class="work-card-title">Workshops &amp; <em>Training</em></h3>
-      <p class="work-card-desc">Workshops and masterclasses for circus schools, companies and festivals. Technique, aerial pole, performance presence and artistic development.</p>
-      <span class="work-card-arrow">→</span>
-    </div>
-    <div class="work-card">
-      <div class="work-card-num">06</div>
-      <div class="work-card-icon">💡</div>
-      <h3 class="work-card-title">Creative <em>Advisory</em></h3>
-      <p class="work-card-desc">Strategic creative input for productions, schools and organisations. Concept development, casting, artistic direction and show design.</p>
-      <span class="work-card-arrow">→</span>
-    </div>
-  </div>
-</section>
-
-<section class="experience" id="experience">
-  <div class="section-header reveal">
-    <div>
-      <p class="section-label">Experience</p>
-      <h2 class="section-title">Where I've worked</h2>
-    </div>
-  </div>
-  <div class="exp-grid reveal">
-    <div class="exp-card exp-card-featured">
-      <div class="exp-top"><span class="exp-name">Cirque du Soleil — <em>Drawn to Life</em></span><span class="exp-year">2019 — Present</span></div>
-      <p class="exp-role">Coach · Creative Contributor · Performer · Orlando, USA</p>
-      <p class="exp-li">Strength &amp; Conditioning Coach — design and deliver S&amp;C programs for the full cast</p>
-      <p class="exp-li">Artist Coach — individual performance coaching and artist development</p>
-      <p class="exp-li">Creative Contributor &amp; Acrobatic Designer — act and production design</p>
-      <p class="exp-li">Co-Chair, Health &amp; Safety Committee</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Cirque de <em>Demain</em></span><span class="exp-year">2025</span></div>
-      <p class="exp-role">Act Creator — Double Pole · Paris, France</p>
-      <p class="exp-li">Created and presented an original double pole act at the world-renowned festival</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Eurovision Song <em>Contest</em></span><span class="exp-year">2026</span></div>
-      <p class="exp-role">Artist Agent · Vienna, Austria</p>
-      <p class="exp-li">Represented and managed artists participating in the Eurovision Song Contest</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Billionaire <em>Dubai</em></span><span class="exp-year">2026</span></div>
-      <p class="exp-role">Artistic Advisor · Dubai, UAE</p>
-      <p class="exp-li">Creative programming, casting, show design and international talent coordination</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Cirque <em>Alice</em></span><span class="exp-year">2025 — Present</span></div>
-      <p class="exp-role">Artistic Advisor · Singapore, Australia &amp; USA</p>
-      <p class="exp-li">Artistic advisory on programming, casting, act quality and talent sourcing</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Calgary Stampede <em>Festival</em></span><span class="exp-year">2025</span></div>
-      <p class="exp-role">Artistic Advisor &amp; Agent · Calgary, Canada</p>
-      <p class="exp-li">Artistic programming, talent selection and international artist placement</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Coliseu Porto — <em>Christmas Show</em></span><span class="exp-year">2024–2025</span></div>
-      <p class="exp-role">Artistic Advisor · Porto, Portugal</p>
-      <p class="exp-li">Artistic direction for two consecutive Christmas productions</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Solventum <em>Annual Event</em></span><span class="exp-year">Feb 2026</span></div>
-      <p class="exp-role">Show Director &amp; Choreographer · International</p>
-      <p class="exp-li">Directed and choreographed full annual corporate show production</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name"><em>Ohlala</em></span><span class="exp-year">2024</span></div>
-      <p class="exp-role">Artistic Advisor &amp; Agent · Zurich, Switzerland</p>
-      <p class="exp-li">Artistic advisory, talent representation and artist bookings</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-top"><span class="exp-name">Freelance Artistic Director <em>&amp; Coach</em></span><span class="exp-year">2014 — Present</span></div>
-      <p class="exp-role">Project Consultant · Worldwide</p>
-      <p class="exp-li">Directed and coached acts at leading global festivals across 30+ countries</p>
-      <p class="exp-li">Collaborated with Franco Dragone, Pink Rabbit, Stampede Canada, Billionaire Dubai, Cirque Alice, Palazzo and others</p>
-    </div>
-  </div>
-</section>
-
-<section class="skills">
-  <p class="section-label">Areas of expertise</p>
-  <div class="skill-tags reveal">
-    <span class="skill-tag">Show Direction</span>
-    <span class="skill-tag">Choreography</span>
-    <span class="skill-tag">Artistic Direction</span>
-    <span class="skill-tag">Act Creation &amp; Design</span>
-    <span class="skill-tag">Acrobatic Design</span>
-    <span class="skill-tag">Talent Representation</span>
-    <span class="skill-tag">Artist Coaching</span>
-    <span class="skill-tag">Strength &amp; Conditioning</span>
-    <span class="skill-tag">Casting Coordination</span>
-    <span class="skill-tag">Project Management</span>
-    <span class="skill-tag">Contract &amp; Logistics</span>
-    <span class="skill-tag">Team Leadership</span>
-  </div>
-</section>
-
-<section class="media" id="media">
-  <div class="section-header reveal">
-    <div>
-      <p class="section-label">Media</p>
-      <h2 class="section-title">Photos, videos &amp; links</h2>
-    </div>
-  </div>
-
-  <div class="media-tabs reveal">
-    <button class="media-tab active" onclick="switchTab('photos',this)">Photos</button>
-    <button class="media-tab" onclick="switchTab('videos',this)">Videos</button>
-    <button class="media-tab" onclick="switchTab('links',this)">Links</button>
-  </div>
-
-  <div class="media-pane active" id="pane-photos">
-    <div class="photo-grid reveal">
-      <div class="photo-item"><img src="Saulo010edit.jpg" alt="Pole performance"><div class="photo-overlay"><span class="photo-caption">Pole performance</span></div></div>
-      <div class="photo-item"><img src="23380033_1215661641867246_341292834863159714_n.jpg" alt="Aerial act"><div class="photo-overlay"><span class="photo-caption">Aerial act</span></div></div>
-      <div class="photo-item"><img src="jms_20140712_2093.jpg" alt="Stage performance"><div class="photo-overlay"><span class="photo-caption">Stage performance</span></div></div>
-      <div class="photo-item"><img src="Saulo028edit.jpg" alt="Horizontal balance"><div class="photo-overlay"><span class="photo-caption">Horizontal balance</span></div></div>
-      <div class="photo-item"><img src="Saulo-7797.jpg" alt="Aerial pole"><div class="photo-overlay"><span class="photo-caption">Aerial pole</span></div></div>
-      <div class="photo-item"><img src="12801128_10154031156440746_7231219686184077879_n.jpg" alt="Full house"><div class="photo-overlay"><span class="photo-caption">Full house</span></div></div>
-      <div class="photo-item"><img src="IMG_0001.JPG" alt="New York"><div class="photo-overlay"><span class="photo-caption">New York</span></div></div>
-    </div>
-  </div>
-
-  <div class="media-pane" id="pane-videos">
-    <p class="feat-label">✦ Featured — Aerial Pole Creator</p>
-    <div class="video-item" style="margin-bottom:2rem">
-      <div class="video-thumb" id="thumbf">
-        <img src="https://img.youtube.com/vi/E9h1ZiQVw-U/maxresdefault.jpg" alt="Aerial Pole Creator">
-        <div class="video-overlay"><div class="play-btn" onclick="embedVideo('thumbf','E9h1ZiQVw-U')"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div>
-      </div>
-      <div class="video-meta"><p class="video-title">Aerial Pole — <em>The Creation</em></p><p class="video-desc">Original discipline · Creator's cut</p></div>
-    </div>
-    <p class="divider-label">More videos</p>
-    <div class="video-grid reveal">
-      <div class="video-item">
-        <div class="video-thumb" id="thumb1"><img src="https://img.youtube.com/vi/cmBoq5j7KU8/maxresdefault.jpg" alt=""><div class="video-overlay"><div class="play-btn" onclick="embedVideo('thumb1','cmBoq5j7KU8')"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div></div>
-        <div class="video-meta"><p class="video-title">Performance <em>Reel</em></p><p class="video-desc">Circus performance · showcase</p></div>
-      </div>
-      <div class="video-item">
-        <div class="video-thumb" id="thumb2"><img src="https://img.youtube.com/vi/v4KoZscVyT8/maxresdefault.jpg" alt=""><div class="video-overlay"><div class="play-btn" onclick="embedVideo('thumb2','v4KoZscVyT8')"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div></div>
-        <div class="video-meta"><p class="video-title">Stage <em>Work</em></p><p class="video-desc">Live performance</p></div>
-      </div>
-      <div class="video-item">
-        <div class="video-thumb" id="thumb3"><img src="https://img.youtube.com/vi/H2VTyBN61SQ/maxresdefault.jpg" alt=""><div class="video-overlay"><div class="play-btn" onclick="embedVideo('thumb3','H2VTyBN61SQ')"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div></div>
-        <div class="video-meta"><p class="video-title">Aerial <em>Act</em></p><p class="video-desc">Performance · aerial discipline</p></div>
-      </div>
-      <div class="video-item">
-        <div class="video-thumb" id="thumb4"><img src="https://img.youtube.com/vi/PkyiWvFY7zA/maxresdefault.jpg" alt=""><div class="video-overlay"><div class="play-btn" onclick="embedVideo('thumb4','PkyiWvFY7zA')"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div></div>
-        <div class="video-meta"><p class="video-title">Festival <em>Highlights</em></p><p class="video-desc">International tour</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="media-pane" id="pane-links">
-    <div class="links-grid reveal">
-      <a href="https://www.instagram.com/saulosarmiento" target="_blank" class="link-card"><div class="link-icon">📸</div><div><p class="link-platform">Instagram</p><p class="link-name">@saulosarmiento</p></div><span class="link-arrow">↗</span></a>
-      <a href="https://www.youtube.com/@saulosarmiento" target="_blank" class="link-card"><div class="link-icon">▶️</div><div><p class="link-platform">YouTube</p><p class="link-name">Saulo Sarmiento</p></div><span class="link-arrow">↗</span></a>
-      <a href="https://www.linkedin.com/in/saulo-sarmiento-ab9646101" target="_blank" class="link-card"><div class="link-icon">💼</div><div><p class="link-platform">LinkedIn</p><p class="link-name">Saulo Sarmiento</p></div><span class="link-arrow">↗</span></a>
-      <a href="/cdn-cgi/l/email-protection#aeddcfdbc2c1eeddcfdbc2c1ddcfdcc3c7cbc0dac180cdc1c3" class="link-card"><div class="link-icon">✉️</div><div><p class="link-platform">Email</p><p class="link-name"><span class="__cf_email__" data-cfemail="9ceffde9f0f3dceffde9f0f3effdeef1f5f9f2e8f3b2fff3f1">[email&#160;protected]</span></p></div><span class="link-arrow">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <img class="contact-bg-img" src="IMG_0001.JPG" alt="">
-  <div class="contact-inner reveal">
-    <p class="contact-label">Get in touch</p>
-    <h2 class="contact-headline">Let's create<br>something <em>remarkable.</em></h2>
-    <p class="contact-sub">Whether you're looking to book a performance, represent your talent, develop your artistry, or shape a creative vision — I'd love to hear from you.</p>
-    <a href="/cdn-cgi/l/email-protection#e29183978e8da29183978e8d9183908f8b878c968dcc818d8f" class="contact-link"><span class="contact-link-label">Email</span><span class="contact-link-value"><span class="__cf_email__" data-cfemail="05766470696a45766470696a766477686c606b716a2b666a68">[email&#160;protected]</span></span><span class="contact-link-arrow">↗</span></a>
-    <a href="/cdn-cgi/l/email-protection#4e3d2f3b22213d2f3c29210e29232f2722602d2123" class="contact-link"><span class="contact-link-label">Email (alt)</span><span class="contact-link-value"><span class="__cf_email__" data-cfemail="6b180a1e0704180a190c042b0c060a020745080406">[email&#160;protected]</span></span><span class="contact-link-arrow">↗</span></a>
-    <a href="https://wa.me/34615813939" target="_blank" class="contact-link"><span class="contact-link-label">WhatsApp</span><span class="contact-link-value">Send a message</span><span class="contact-link-arrow">↗</span></a>
-    <a href="https://www.instagram.com/saulosarmiento" target="_blank" class="contact-link"><span class="contact-link-label">Instagram</span><span class="contact-link-value">@saulosarmiento</span><span class="contact-link-arrow">↗</span></a>
-    <a href="https://www.linkedin.com/in/saulo-sarmiento-ab9646101" target="_blank" class="contact-link"><span class="contact-link-label">LinkedIn</span><span class="contact-link-value">Saulo Sarmiento</span><span class="contact-link-arrow">↗</span></a>
-  </div>
-</section>
-
-<footer>
-  <img src="LogoSaulo_blanco_fondoTransparente.png" alt="Saulo Sarmiento" style="height:32px;width:auto;opacity:0.5">
-  <p>© 2026 saulosarmiento.com</p>
-</footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-function switchTab(pane,btn){
-  document.querySelectorAll('.media-tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.media-pane').forEach(p=>p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('pane-'+pane).classList.add('active');
-}
-function embedVideo(thumbId,ytI
+AERIAL POLE ✦
+CIRCUS PERFORMANCE ✦
+ARTIST AGENCY ✦
+ARTIST COACHING ✦
+250+ PERFORMERS WORLDWIDE ✦
+CREATIVE ADVISORY ✦
+AERIAL POLE ✦
+CIRCUS PERFORMANCE ✦
+ARTIST AGENCY ✦
+ARTIST COACHING ✦
+250+ PERFORMERS WORLDWIDE ✦
+CREATIVE ADVISORY ✦
+ABOUT
+Creator. Agent. Coach.
+￼
+30+
+ARTISTS MANAGED
+250+
+PERFORMERS NETWORK
+5
+CONTINENTS
+∞
+STORIES TOLD
+Multilingual creative leader combining deep artistic expertise with production management, coaching, and talent development. Experienced in show direction, act creation, artistic advisory, and creative consulting for world-class companies including Cirque du Soleil and Franco Dragone.
+Creator of acts presented at Cirque de Demain Paris, Monte-Carlo Festival, and other leading international platforms. Active across 30+ countries as director, advisor, coach, and agent.
+LANGUAGES
+Spanish — Native  ·  English — Fluent  ·  French — Fluent  ·  Italian — Fluent
+PORTFOLIO
+What I do
+01
+Circus Performance & Aerial Pole
+Performer and creator of aerial pole — an original discipline presented at Cirque de Demain Paris and stages across five continents. A signature act unlike anything else.
+→
+02
+Artist Coach
+Individual coaching for circus artists — programming routines, developing performance presence, and keeping artists physically fit and ready for the demands of professional performance.
+→
+03
+Artist Agency
+Freelance artist agency backed by a global database of 250+ performers worldwide. Connecting exceptional talent with producers, festivals and events at every scale.
+→
+04
+Artist Management
+Personally managing a roster of 30+ artists — bookings, contracts, career strategy and creative development for circus performers at all career stages.
+→
+05
+Workshops & Training
+Workshops and masterclasses for circus schools, companies and festivals. Technique, aerial pole, performance presence and artistic development.
+→
+06
+Creative Advisory
+Strategic creative input for productions, schools and organisations. Concept development, casting, artistic direction and show design.
+→
+EXPERIENCE
+Where I've worked
+Cirque du Soleil — Drawn to Life
+2019 — Present
+COACH · CREATIVE CONTRIBUTOR · PERFORMER · ORLANDO, USA
+Strength & Conditioning Coach — S&C programs for the full cast
+Artist Coach — individual performance coaching and development
+Creative Contributor & Acrobatic Designer — act and production design
+Co-Chair, Health & Safety Committee
+Cirque de Demain
+2025
+ACT CREATOR — DOUBLE POLE · PARIS, FRANCE
+Created and presented an original double pole act at the world-renowned festival
+Eurovision Song Contest
+2026
+ARTIST AGENT · VIENNA, AUSTRIA
+Represented and managed artists in the Eurovision Song Contest
+Billionaire Dubai
+2026
+ARTISTIC ADVISOR · DUBAI, UAE
+Creative programming, casting, show design and international talent coordination
+Cirque Alice
+2025 — Present
+ARTISTIC ADVISOR · SINGAPORE, AUSTRALIA & USA
+Artistic advisory on programming, casting, act quality and talent sourcing
+Calgary Stampede Festival
+2025
+ARTISTIC ADVISOR & AGENT · CALGARY, CANADA
+Artistic programming, talent selection and international artist placement
+Coliseu Porto — Christmas Show
+2024–2025
+ARTISTIC ADVISOR · PORTO, PORTUGAL
+Artistic direction for two consecutive Christmas productions
+Solventum Annual Event
+Feb 2026
+SHOW DIRECTOR & CHOREOGRAPHER · INTERNATIONAL
+Directed and choreographed full annual corporate show production
+Ohlala
+2024
+ARTISTIC ADVISOR & AGENT · ZURICH, SWITZERLAND
+Artistic advisory, talent representation and artist bookings
+Freelance Artistic Director & Coach
+2014 — Present
+PROJECT CONSULTANT · WORLDWIDE
+Directed and coached acts at leading global festivals across 30+ countries
+Collaborated with Franco Dragone, Pink Rabbit, Stampede Canada, Billionaire Dubai, Cirque Alice, Palazzo and others
+AREAS OF EXPERTISE
+SHOW DIRECTION
+CHOREOGRAPHY
+ARTISTIC DIRECTION
+ACT CREATION & DESIGN
+ACROBATIC DESIGN
+TALENT REPRESENTATION
+ARTIST COACHING
+STRENGTH & CONDITIONING
+CASTING COORDINATION
+PROJECT MANAGEMENT
+CONTRACT & LOGISTICS
+TEAM LEADERSHIP
+MEDIA
+Photos, videos & links
+PHOTOS
+VIDEOS
+LINKS
+￼
+POLE PERFORMANCE
+￼
+AERIAL ACT
+￼
+STAGE PERFORMANCE
+￼
+HORIZONTAL BALANCE
+￼
+AERIAL POLE
+￼
+FULL HOUSE
+￼
+NEW YORK
+GET IN TOUCH
+Let's create something remarkable.
+Whether you're looking to book a performance, represent your talent, develop your artistry, or shape a creative vision — I'd love to hear from you.
+EMAIL
+saulo@saulosarmiento.com
+↗
+EMAIL (ALT)
+saulosargo@gmail.com
+↗
+WHATSAPP
+Send a message
+↗
+INSTAGRAM
+@saulosarmiento
+↗
+LINKEDIN
+Saulo Sarmiento
+↗
+￼
+© 2026 SAULOSARMIENTO.COM
